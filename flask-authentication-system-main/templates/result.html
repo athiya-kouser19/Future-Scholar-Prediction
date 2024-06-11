@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #001f3f;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #001f3f;
+        }
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #001f3f;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            color: #001f3f;
+        }
+        a {
+            color: #001f3f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admission Prediction Result</h2>
+        <p>{{ prediction_text }}</p>
+        <ul>
+            {% for college in colleges %}
+                <li>{{ college.name }} - {{ college.location }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/index1">Back to Prediction Form</a>
+    </div>
+</body>
+</html>

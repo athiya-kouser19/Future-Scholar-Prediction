@@ -1,0 +1,144 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            color:white;
+            background-color: #002147; /* Oxford Blue */
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #002147; /* Oxford Blue */
+        }
+        .predict-button {
+      background-color: #002147; /* Oxford blue */
+      color: #ffffff; /* White text */
+      padding: 20px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      align-content: center;
+    }
+    
+    /* Hover effect */
+    .predict-button:hover {
+      background-color: #002147; /* Darker Oxford blue */
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2>DISCOVER YOUR DREAM COLLEGE</h2>
+        
+        
+    </div>
+    <h3>
+
+        Welcome To College Predictor, <br>
+        Your Personalized Gateway To Finding The Perfect College Based On Your Common Entrance Test  Scores.
+         
+        
+    </h3><br>
+    <br>
+   
+    <a href="{{ url_for('index1') }}" class="btn btn-primary">PREDICT </a>
+
+
+
+</body>
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #002147; /* Oxford Blue */
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar h2 {
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .content {
+            text-align: center;
+            padding: 2rem;
+        }
+        .content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .predict-button {
+            background-color: #002147; /* Oxford blue */
+            color: #ffffff; /* White text */
+            padding: 14px 28px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .predict-button:hover {
+            background-color: #001b33; /* Darker Oxford blue */
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>DISCOVER YOUR DREAM COLLEGE</h2>
+    </div>
+    <div class="content">
+        <h3>Welcome To College Predictor,<br>
+        Your Personalized Gateway To Finding The Perfect College Based On Your Common Entrance Test Scores.</h3>
+        <a href="{{ url_for('index1') }}" class="predict-button">PREDICT</a>
+    </div>
+    <div class="footer">
+        &copy; 2024 College Predictor. All Rights Reserved.
+    </div>
+</body>
+</html>
